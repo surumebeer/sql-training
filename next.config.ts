@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
+  basePath: '/sql-training',
+  assetPrefix: '/sql-training/',
   trailingSlash: true,
   images: {
     unoptimized: true,

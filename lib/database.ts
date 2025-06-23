@@ -7,7 +7,7 @@ let db: Database | null = null;
 export async function initializeDatabase() {
   if (!SQL) {
     SQL = await initSqlJs({
-      locateFile: (file: string) => `https://sql.js.org/dist/${file}`,
+      locateFile: (file: string) => `/sql-training/${file}`,
     });
   }
 
